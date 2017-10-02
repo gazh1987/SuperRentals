@@ -29,15 +29,15 @@ test('should link to information about the company', function (assert){
   click('a:contains("About")'); //click About link
   andThen(function(){
     assert.equal(currentURL(), '/about', 'should navigate to about'); //verify /about URL is loaded
-  })
+  });
 });
 
 test('should link to contact information', function (assert){
   visit('/');
   click('a:contains("Contact")');
   andThen(function(){
-    assert.equal(currentURL(), '/contact', 'should navigate to contact')
-  })
+    assert.equal(currentURL(), '/contact', 'should navigate to contact');
+  });
 });
 
 //Fill out Seattle as search criteria and assert that 1 is returned
